@@ -7,8 +7,13 @@ Inspired by platforms like **Patreon**, this project focuses on real-world featu
 ---
 
 ### Home Page
-![Home Page](screenshots/Screenshot 2025-12-23 124815.png)
+![Home Page](screenshots/home.png)
 
+### Payment through Razorpay
+![Razorpay](screenshots/dashboard.png)
+
+### Payment Done
+![Done](screenshots/profile.png)
 ---
 
 ## 🧠 Architecture (Important)
