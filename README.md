@@ -16,7 +16,7 @@ Inspired by platforms like **Patreon**, this project focuses on real-world featu
 ![Done](screenshots/profile.png)
 ---
 
-## 🧠 Architecture (Important)
+## 🧠 Architecture 
 
 This is a **full-stack Next.js application**.
 
