@@ -63,6 +63,69 @@ This is a **full-stack Next.js application**.
 
 ---
 
+## 🛠 Local Installation
+
+Follow these steps to run the project on your local machine.
+
+---
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- **Node.js** (v18 or later)
+- **npm**
+- **MongoDB** (local instance or MongoDB Atlas)
+- **Razorpay account** (for payment keys)
+
+---
+
+🛠 Local Installation
+
+Follow these steps to run the project on your local machine.
+
+Prerequisites
+
+Make sure you have the following installed:
+
+Node.js (v18 or later)
+
+npm
+
+MongoDB (local instance or MongoDB Atlas)
+
+Razorpay account (for payment keys)
+
+1️⃣ Clone the Repository
+git clone https://github.com/AnkuThakur704/getmeachai.git
+cd getmeachai
+
+2️⃣ Install Dependencies
+npm install
+
+3️⃣ Configure Environment Variables
+
+Create a .env.local file in the root directory and add:
+
+MONGODB_URI=your_mongodb_connection_string
+
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_secret
+
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+4️⃣ Run the Development Server
+npm run dev
+
+5️⃣ Open in Browser
+
+Visit:
+
+http://localhost:3000
+
+
+
+
 ## 📁 Project Structure
 
 ```text
@@ -88,3 +151,5 @@ This is a **full-stack Next.js application**.
 ├── next.config.mjs
 ├── package.json
 └── README.md
+
+
