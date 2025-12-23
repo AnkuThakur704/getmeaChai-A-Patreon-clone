@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ☕ GetMeAChai — Creator Support Platform
 
-## Getting Started
+A full-stack creator support platform built with **Next.js App Router**, allowing creators to showcase their work and receive financial support from their audience.
 
-First, run the development server:
+Inspired by platforms like **Patreon**, this project focuses on real-world features such as payments, authentication, public creator pages, and engagement metrics.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧠 Architecture (Important)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+This is a **full-stack Next.js application**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend:** React (Next.js App Router)
+- **Backend:** Next.js API Routes (`/app/api`)
+- **Database:** MongoDB
+- **Payments:** Razorpay
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Features Implemented
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🔐 Authentication
+- User login system
+- Creator-specific access and sessions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📊 Creator Dashboard
+- Update creator profile information
+- Manage public creator details
+- View engagement-related data
 
-## Deploy on Vercel
+### 💸 Payments (Razorpay)
+- Supporters can make payments to creators
+- Razorpay checkout integration
+- Payment handling via API routes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🏆 Supporters’ Leaderboard
+- Public leaderboard displaying top supporters
+- Encourages engagement and repeat support
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🖼️ Profile Customization
+- Update profile image
+- Update cover image
+- Public-facing creator profile pages
+
+---
+
+## 🧩 Feature in Progress
+
+### 🎨 Creator Sample Works (WIP)
+
+**Creators can:**
+- Add sample works to their profile
+- Add descriptions for each work
+
+**Viewers can:**
+- View creator sample works
+- Like individual works
+
+**Purpose:**
+- Showcase creator quality
+- Build trust with supporters
+- Increase engagement
+
+---
+
+## 📁 Project Structure
+
+```text
+/
+├── actions/
+│   └── useractions.js       # Server actions / business logic
+│
+├── app/
+│   ├── api/                 # Backend API routes
+│   ├── db/                  # Database connection
+│   ├── models/              # MongoDB models
+│   ├── dashboard/           # Creator dashboard pages
+│   ├── login/               # Authentication pages
+│   ├── [username]/          # Public creator profile pages
+│   ├── components/          # App-specific components
+│   ├── layout.js            # Root layout
+│   └── page.js              # Landing page
+│
+├── lib/
+│   └── utils.js             # Utility functions
+│
+├── public/                  # Static assets
+├── next.config.mjs
+├── package.json
+└── README.md
